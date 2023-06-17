@@ -27,9 +27,11 @@ main { background-color: #404040;
     width: 100%; 
 }
 .block1_1 { background: linear-gradient(180deg, rgba(30, 30, 30, 0.76) 0%, #000000 100%);
-    opacity: 0.4; height: 649px;  
+    opacity: 0.4; 
+    /* height: 649px;   */
 
 }
+.grad { background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%), rgba(0, 0, 0, 0.3);  }
 header {   
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%), rgba(0, 0, 0, 0.3);
       
@@ -51,10 +53,7 @@ header {
 #burger, [ for=burger] {
     display: none;
 }
-.menu { 
-       
-        /* margin-right: 85.31px; */
-  }
+
   .menu ul {
     display: flex;
     list-style: none; opacity: 0.7;
@@ -71,9 +70,6 @@ header {
        
   }
 
-  /* .menu li:last-child {
-    margin-left: 85.31px; opacity: 1; border: solid red 1px; 
-} */
 
 .menu a { color: #FFFFFF;
     text-decoration: none;
@@ -88,17 +84,7 @@ header {
     margin: 0;
 
 }
-/* .apllic { margin-left: 85.31px; font-size: 18.1289px; line-height: 129.19%;  color: #FFFFFF;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: 700; 
-    line-height: 23px;
-    letter-spacing: 0em;
-    text-align: right; display: inline-block;
-    }
 
-.apllic a  {color: #FFFFFF;
-    text-decoration: none;} */
 .offer {  
     padding-top: 162px; 
     /* margin-right: 66px; 
@@ -250,11 +236,7 @@ color: #FFFFFF;
             display: flex; align-items: center;
         
 }
-.options1 {
-    /* height: 411px;  */
-    /* width: 567px;  */
-   
-}
+
 .options1 p {
     font-weight: 700;
     font-size: 26px;
@@ -355,11 +337,12 @@ margin: 0px;
 .macbook { margin-left: 33.6px;  position: relative; 
 
 }
-#maps { position: absolute; left: 65px; bottom: 45px; 
+#macbook { max-width: 100%;}
+#maps { position: absolute; max-width: 80%; left: 11%; bottom: 9%; 
     /* width: 80%; */
 }
 .block3 {  
-    background-image: url(image/image\ 263.png); background-repeat: no-repeat;
+    background-image: url(image/image\ 263.png); background-size: cover; background-position: center; background-repeat: no-repeat;
     padding-bottom: 90px;
 
 }
@@ -373,7 +356,9 @@ margin: 0px;
     padding-top: 66px;
 }
 .advantages { 
-    margin: 25px 105px 5px 105px;  
+    margin-top: 25px ;  
+    width: 850px;
+    max-width: 100%;
     
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%), rgba(0, 0, 0, 0.3);
 backdrop-filter: blur(6px); 
@@ -588,27 +573,27 @@ animation: animed2 1.0s infinite;
  {from {transform: rotate(0deg); }
   to {transform: rotate(360deg)}}
   
-.car { position: relative; 
-    /* width: 601px;
-    height: 394px;  */
+.car { position: absolute;  bottom: -97px; 
+   
 
 }
   .uber {
-    width: 601px;
-    height: 394px;
-    position: absolute; bottom: -97px; animation: none; 
+    max-width: 601px;
+   
 }
 .light {  
-    position: absolute; 
-    left: 310px;
-   bottom: 35px;
+    position: absolute;
+    left: 54%;
+    width: 9.8%;
+    bottom: 46%;
     animation: animation1 1s infinite; 
    
 }
 .light_1 { 
     position: absolute; 
-    left: 547px;
-    bottom: 85px;
+    left: 90%;
+    width: 9.8%;
+    bottom: 46%;
    
     animation: animation1 1s infinite;
    
@@ -624,6 +609,7 @@ animation: animed2 1.0s infinite;
     margin-right: 113px; 
     margin-left: 0;
     margin-right: 0;
+    position: relative;
 }
   .requir1 { margin: 0;}
   .requir2 { 
@@ -677,23 +663,28 @@ animation: animed2 1.0s infinite;
 
 }    
 
-.invit_main { background-image: url(image/image\ 21.png);   
+.invit_main { background-image:linear-gradient(45deg, rgb(0,0,0,0.7), rgb(0,0,0,0.7)), url(image/image\ 21.png); 
+            background-size: cover; 
+            background-position: center;    
             background-repeat: no-repeat;  
             padding-top: 85px; 
             padding-bottom: 80px; 
             display: flex; 
-            justify-content: center;  
+            justify-content:center;
+            
+             
 }
 .invit {
-     border: solid yellow 1px; margin-left: 0; margin-right: 50px;
-     height: 185px;
+     margin-left: 0; margin-right: 0px;  
+    
      
 }
 #invit {font-weight: 700;
     font-size: 36px;
     line-height: 43px;
     color: #FFFFFF;
-    margin: 0; padding: 0;
+    margin-right: 50px; padding: 0;
+   
 }
 #invit_1 {
     font-weight: 600;
@@ -704,7 +695,7 @@ animation: animed2 1.0s infinite;
     margin: 0; padding: 0;
     margin-top: 30px;
 }
-.form { margin: 0;
+.form { margin: 0 ;
   
 }
 .name2 {width: 343px;
@@ -756,13 +747,13 @@ animation: animed2 1.0s infinite;
         padding-top: 130px;
         padding-bottom: 32px;
 }
-.block6 { width:70%; height:400px;
+.block6 { width:100%; height:500px;
 
-    /* background-image: url(image/image\ 251.png); height: 500px; */
+    /* background-image: url(image/image\ 251.png);  */
 }
 
 .contact {
-    background: url(image/Rectangle\ 63.png) ; 
+    background: url(image/Rectangle\ 63.png);  background-size: cover; background-position: center;
 }
 .contact1 { display: flex; justify-content: space-between; align-items: center;
     margin-bottom: 71px;
@@ -774,9 +765,7 @@ animation: animed2 1.0s infinite;
     color: #FFFFFF;
     margin-left: 0;
     margin-right: 0;
-    /* margin: 48px 42px 71px 132px; */
-    /* width: 474px;
-    height: 67px; */
+   
 }
 #cont2 {
     font-style: normal;
@@ -787,10 +776,7 @@ animation: animed2 1.0s infinite;
     opacity: 0.4; 
     margin: 0;
    
-    /* margin-bottom: 82px;
-    margin-right: 43px; */
-    /* width: 569px;
-    height: 27px; */
+    
 
 }
 #logo1 {
@@ -800,7 +786,7 @@ animation: animed2 1.0s infinite;
     margin: 0;
 
 }
-.contact2 { display: flex; margin-bottom: 76px; justify-content: space-between;
+.contact2 { display: flex; padding-bottom: 76px; justify-content: space-between;
 
 }
 .contact2_1 {
@@ -860,7 +846,7 @@ animation: animed2 1.0s infinite;
     margin-right: 0;
 }
 footer { 
-    background-color: #1E1E1E;  border: solid red 1px;
+    background-color: #1E1E1E;  
 
 }
 .foot{
@@ -939,11 +925,7 @@ footer {
 
 
 
-#teleg1 { 
-      
 
-
-}
 #inst { width: 21px;
 height: 21px;} 
 .teleg_inst_main { display: flex;
@@ -957,7 +939,7 @@ height: 21px;}
 
 
 
-@media (max-width:1150px) {
+@media (max-width:1000px) {
 
 [ for=burger] {
     display: block;
@@ -978,7 +960,7 @@ header { position: relative;
     display: block;
 }
  .menu ul { display: block;
-    /* position: fixed; */
+   
  }
  
  #aplic {
@@ -997,24 +979,17 @@ justify-content: center;
     width: 567px;
     margin-bottom: 50px;
 }
-
 .comp {
     flex-direction: column; 
     align-items: center;
-    
-    
 }
 .about1 { order: 1; margin-bottom: 66px;
 }
 .about2 { padding-top: 0;
-
 }
 .iphon { order: 2;
-
 }
 .macbook { margin-left: auto; } 
-
-
 .advantages1 {display: flex;}
 .fraim {flex-direction: column;}
 .review {flex-direction: column; align-items: center;}
@@ -1028,7 +1003,8 @@ justify-content: center;
 .car {margin: 0px;}
 .aplic1 {display: block;}
 .invit_main {flex-direction: column;  }
-.invit { margin-bottom: 44px; }
+.invit { margin-bottom: 44px; text-align: center; }
+.form {margin: 0 auto;}
 .contact1 { flex-direction: column; margin-bottom: 74px; }
 #logo1 {display: none;}
 .contact2 { flex-direction: column; text-align: center;}
